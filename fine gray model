@@ -15,7 +15,7 @@ crr_data <- prg_3yr_analysis %>%
 
 # Define cause-specific indicators
 crr_data$prg <- ifelse(crr_data$PRG_FG == 1, 1L, 0L)
-crr_data$death <- ifelse(crr_data$death == 1, 1L, 0L)
+crr_data$death <- ifelse(crr_data$death == 1, 2L, 0L)
 
 crr_data$event_type <- with(crr_data, ifelse(
   PRG_FG == 1, 1L,
